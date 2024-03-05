@@ -1,0 +1,15 @@
+---
+version: '3'
+name: 'depuracion'
+
+services:
+  solver:
+    container_name: solver
+    build:
+      context: '.'
+      dockerfile: Dockerfile
+    ports:
+      - "9229:9229"
+    volumes:
+      - ./src/:/home/node/app/src/
+      - ./test/:/home/node/app/test/

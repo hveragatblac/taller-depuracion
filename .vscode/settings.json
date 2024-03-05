@@ -1,0 +1,12 @@
+{
+  "eslint.enable": true,
+  "eslint.workingDirectories": ["src", "test"],
+  "files.eol": "\n",
+  "files.insertFinalNewline": false,
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.quoteProps": "preserve",
+  "prettier.requireConfig": true,
+  "prettier.singleQuote": true,
+  "prettier.useEditorConfig": true
+}

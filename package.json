@@ -1,0 +1,41 @@
+{
+  "name": "taller-depuracion",
+  "version": "1.0.0",
+  "description": "Taller de depuración",
+  "main": "src/index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node src/index.js",
+    "start:watch": "node --watch-path=./src ./src/index.js",
+    "start:debug": "node --inspect-brk --watch-path=./src ./src/index.js",
+    "docker:up": "docker compose -f ./docker-compose.yaml up -d --build && docker exec -it solver sh",
+    "docker:down": "docker compose -f ./docker-compose.yaml down --rmi local",
+    "docker:debug": "node --nolazy --inspect-brk=0.0.0.0:9229 --watch-path=./src ./src/index.js",
+    "test": "node --test ./test",
+    "test:watch": "node --watch --test ./test",
+    "test:node21": "node --test ./test/*.test.js",
+    "test:watch:node21": "node --watch --test ./test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hveragatblac/taller-depuracion.git"
+  },
+  "keywords": [
+    "debugging",
+    "1brc",
+    "node.js"
+  ],
+  "author": "Héctor Vera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hveragatblac/taller-depuracion/issues"
+  },
+  "homepage": "https://github.com/hveragatblac/taller-depuracion#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4"
+  }
+}

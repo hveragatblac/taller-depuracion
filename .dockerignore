@@ -1,0 +1,9 @@
+.dockerignore
+Dockerfile
+
+.git
+.vscode
+node_modules
+
+resources/measurements/10_000_000.txt
+resources/measurements/100_000_000.txt
