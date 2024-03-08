@@ -2,7 +2,7 @@ import path from 'node:path';
 import wt from 'node:worker_threads';
 import { Record } from './record.js';
 import { create_contextual_console } from './utilities/console.utility.js';
-import { create_intersection_checker_for, noop } from './utilities/miscellaneous.utility.js';
+import { noop } from './utilities/miscellaneous.utility.js';
 import { SharedI32 } from './utilities/shared-memory.utility.js';
 
 /**
