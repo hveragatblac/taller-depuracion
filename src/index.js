@@ -32,6 +32,7 @@ if (is_secondary_module(import.meta)) {
   await solve({
     input_path: args['measurements-path'],
     worker_count: args['worker-count'],
+    chunk_size: args['chunk-size'],
   });
   const end = performance.now();
   const elapsed = ((end - beg) / 1000).toFixed(4);
